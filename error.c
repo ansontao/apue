@@ -14,3 +14,9 @@ void err_ret(const char *fmt, ...)
     err_doit(1, errno, fmt, ap);
     va_end(ap);
 }
+
+
+/*
+ * Print a message and return to caller.
+ * Caller specified "errnoflag"
+ */
