@@ -17,6 +17,7 @@
 #include <string.h>
 #include <unistd.h>
 #include <signal.h>
+#include <fcntl.h>
 
 #define MAXLINE    4096    /* max line length */
 
@@ -52,5 +53,8 @@ void log_open(const char *, ...);
 void log_quit(const char *, ...);
 void log_ret(const char *, ...);
 void log_sys(const char *, ...);
+
+void set_fl(int, int);
+void clr_fl(int, int);
 
 #endif /* _APUE_H  */

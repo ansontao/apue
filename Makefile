@@ -1,5 +1,5 @@
-TAR = testchangeable
-OBJ = testchangeable.o error.o
+TAR = write
+OBJ = write.o error.o
 
 
 $(TAR) : $(OBJ)
