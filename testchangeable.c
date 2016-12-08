@@ -19,8 +19,7 @@ void X_DEBUG(const char *fmt,...)
     char str[1024];
     va_list args;
     va_start(args, fmt);
-    snprintf(str, 1024, fmt, args);
-    printf(str);
+    vsnprintf(str, 1024, fmt, args);
     va_end(args);
 }
 
@@ -31,5 +30,6 @@ int main(int argc, char const* argv[])
     int c = 3;
     int d = 4;
     X_DEBUG("this is abc %s\n", "abc");
+    err_msg("heheda");
     return 0;
 }
