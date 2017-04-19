@@ -1,8 +1,13 @@
 TAR = math
-OBJ = math.o 
+OBJ = math.o stack.o
 
+TAR2 = intopost
+OBJ2 = intopost.o stack.o
 
-$(TAR) : $(OBJ)
+$(TAR2) : $(OBJ2)
+	gcc -o $@ $^
+
+$(TAR) : $(OBJ) 
 	gcc -o $@ $^
 
 
